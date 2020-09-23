@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
+    "target": "ES2020",
     "module": "ESNext",
     "moduleResolution": "Node",
     "lib": [
@@ -14,18 +14,20 @@
     "strict": true,
     "noEmit": true,
     "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
     "baseUrl": ".",
     "paths": {
       "~/*": [
-        "./*"
+        "./src/*"
       ],
       "@/*": [
-        "./*"
+        "./src/*"
       ]
     },
     "types": [
       "@types/node",
-      "@nuxt/types"
+      "@nuxt/types",
+      "liff-type",
     ]
   },
   "exclude": [
